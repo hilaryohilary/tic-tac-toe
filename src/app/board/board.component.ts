@@ -26,7 +26,7 @@ export class BoardComponent {
     this.newGame();
   }
 
-  @ViewChild('winner')
+  @ViewChild('winnerRef')
   winnerTemplate!: TemplateRef<any>;
 
   constructor( private windowService: NbWindowService){}
@@ -49,7 +49,7 @@ export class BoardComponent {
   newGame() {
     this.squares = Array(9).fill(null);
     this.winner = undefined;
-    this.xIsNext = true;
+    this.xIsNext = !this.xIsNext;
   }
   resetScore() {
     this.newGame();

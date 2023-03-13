@@ -1,7 +1,7 @@
 <div>
-  <h1> Current Player is: {{ player }}</h1>
+  <h1 *ngIf="winner !== 'X' && winner !== 'O'"> Current Player is: {{ player }}</h1>
 <button nbButton outline status="danger" (click)="newGame()" class="newGame">New Game</button>
-<ng-template #winner let-data>
+<ng-template #winnerRef let-data>
   <h2 *ngIf="winner">
     Player {{ data.text }} won!
   </h2>
