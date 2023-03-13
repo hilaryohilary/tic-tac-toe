@@ -1,0 +1,24 @@
+<div>
+  <h1> Current Player is: {{ player }}</h1>
+<button nbButton outline status="danger" (click)="newGame()" class="newGame">New Game</button>
+<ng-template #winner let-data>
+  <h2 *ngIf="winner">
+    Player {{ data.text }} won!
+  </h2>
+</ng-template>
+
+</div>
+
+  <main>
+    <app-square *ngFor="let square of squares; let i = index"
+    [value]="square"
+    (click)="makeMove(i)">
+    </app-square>
+</main>
+    <div id="score">
+      <h3><span>X</span> {{xScore}}</h3>
+      <h3><span>O</span>{{ OScore }}</h3>
+    </div>
+    <div>
+      <button nbButton outline status="success" (click)="resetScore()" class="reset">Reset</button>
+    </div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ng-tic-tac-toe329": {
+      "hosting": {
+        "tic-tac-toe": [
+          "ng-tic-tac-toe329"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ng-tic-tac-toe329"
+  }
+}
