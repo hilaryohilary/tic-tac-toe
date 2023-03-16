@@ -30,7 +30,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    NbWindowModule.forRoot()
+    NbWindowModule.forRoot(),
+    NbThemeModule.forRoot({ name: 'dark' })
   ],
   providers: [],
   bootstrap: [AppComponent]

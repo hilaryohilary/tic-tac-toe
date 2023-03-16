@@ -1,3 +1,7 @@
+div {
+  text-align: center;
+}
+
 
 main {
   display: grid;
@@ -5,10 +9,6 @@ main {
   grid-gap: 0px;
   max-width: 400px;
   margin: 1em auto;
-}
-
-div {
-  text-align: center;
 }
 
 app-square {
